@@ -1,4 +1,3 @@
-````markdown
 # BrowserMate AI
 
 **A plug-and-play Chrome extension that lets users chat with their Bookmarks, Browsing History, and Reading List using AI.**
