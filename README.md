@@ -28,7 +28,7 @@ BrowserMate AI is a Manifest v3 Chrome extension built with React, TypeScript, a
    ```bash
    git clone https://github.com/yourusername/browsermate-ai.git
    cd browsermate-ai
-````
+   ````
 
 2. Install dependencies
 
