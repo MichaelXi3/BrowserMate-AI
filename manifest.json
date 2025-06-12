@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "BrowserMate AI",
+  "version": "1.0.0",
+  "description": "Chat with your bookmarks, browsing history, and reading list using AI",
+  "permissions": [
+    "storage",
+    "bookmarks",
+    "history",
+    "readingList",
+    "alarms",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background/worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/chatPort.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "BrowserMate AI"
+  },
+  "options_page": "options/index.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["chat/index.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 
